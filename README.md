@@ -35,15 +35,19 @@ Vue3 , Tailwind CSS , TypeScript , Vue Router, Vite , Pnpm
 > AI生成后有一项需要修改兼容有问题，使用 vite@4 版本，使用如下命令创建项目
 pnpm create vite@4 ops-platform --template vue-ts
 
+## 环境版本
+- node v20.18.1
+- pnpm 9.14.4
+
 ## 启动项目
-pnpm run dev
+`pnpm run dev`
 
 ## 访问
-http://localhost:5173/
-admin
-123
+- http://localhost:5173/
+- admin / 123
 
 ## 项目结构及文件介绍
+```bash
 ├── index.html               # 入口 HTML 文件
 ├── package.json             # 配置项目依赖和脚本
 ├── pnpm-lock.yaml           # 锁定依赖版本
@@ -74,9 +78,11 @@ admin
 │   │       └── HuaweiCloud.vue   # 华为云页面
 │   ├── App.vue              # 根组件，主要用于包含 <router-view />
 │   └── main.ts              # 应用入口文件，初始化和挂载根组件
+```
 
 
 ## 主要文件和目录介绍
+```bash
 index.html: 在浏览器中运行的入口 HTML 文件。
 package.json: 包含项目信息、依赖和构建脚本。
 pnpm-lock.yaml: 锁定依赖版本确保项目一致性。
@@ -84,3 +90,13 @@ postcss.config.js: PostCSS 配置文件，用于处理 Tailwind CSS。
 tailwind.config.js: Tailwind CSS 配置文件，定义样式规则。
 tsconfig.json: TypeScript 配置文件，定义 TypeScript 编译相关选项。
 vite.config.ts: Vite 配置文件，用于项目构建和开发服务器设置。
+```
+
+## 项目截图
+![login](doc/img/login.jpg)
+![404](doc/img/404.jpg)
+![403](doc/img/403.jpg)
+![home](doc/img/home.jpg)
+![service](doc/img/service.jpg)
+![monitoring](doc/img/monitoring.jpg)
+![cloud](doc/img/aliyun.jpg)
